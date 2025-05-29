@@ -16,7 +16,7 @@ int printArray2(int arr[], int size) {
 	for (int i = 0; i < size; i++) {
 		tot += arr[i];
 	}
-	cout << tot << " " << tot/size <<endl;
+	cout << tot << " " << (double)tot/size <<endl;
 	
 	return 0;
 }
