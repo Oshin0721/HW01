@@ -54,13 +54,13 @@ int main() {
 	cin >> choice;
 
 	if (choice == 1) {
-			insertionSort(arr, 5, true);
-			cout << "오름차순 삽입 정렬 완료." << endl;
+		insertionSort(arr, 5, true);
+		cout << "오름차순 삽입 정렬 완료." << endl;
 	} else if (choice == 2) {
-			insertionSort(arr, 5, false);
-			cout << "내림차순 삽입 정렬 완료." << endl;
+		insertionSort(arr, 5, false);
+		cout << "내림차순 삽입 정렬 완료." << endl;
 	} else {
-			cout << "잘못된 선택입니다. 정렬하지 않습니다." << endl;
+		cout << "잘못된 선택입니다. 정렬하지 않습니다." << endl;
 	}
 
 	printArray(arr, 5);
