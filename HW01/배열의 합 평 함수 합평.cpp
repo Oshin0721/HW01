@@ -41,30 +41,31 @@ int main() {
 	for (int i = 0; i < 5; i++) {
 		cout << i + 1 << "번째 정수: ";
 		cin >> arr[i];
-	}
+		}
 		
-		double total = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
-		double average = total / 5;
+	double total = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
+	double average = total / 5;
 
-		cout << "합계 : " << total << endl;
-		cout << "평균 : " << average << endl;
+	cout << "합계 : " << total << endl;
+	cout << "평균 : " << average << endl;
 		
-		int choice;
-		cout << "정렬 방법을 선택하세요 (1: 오름차순, 2: 내림차순): ";
-		cin >> choice;
+	int choice;
+	cout << "정렬 방법을 선택하세요 (1: 오름차순, 2: 내림차순): ";
+	cin >> choice;
 
-		if (choice == 1) {
+	if (choice == 1) {
 			insertionSort(arr, 5, true);
 			cout << "오름차순 삽입 정렬 완료." << endl;
-		} else if (choice == 2) {
+	} else if (choice == 2) {
 			insertionSort(arr, 5, false);
 			cout << "내림차순 삽입 정렬 완료." << endl;
-		} else {
+	} else {
 			cout << "잘못된 선택입니다. 정렬하지 않습니다." << endl;
-		}
+	}
 
-		printArray(arr, 5);
-		printArray2(arr, 5);
+	printArray(arr, 5);
+	printArray2(arr, 5);
 		
 	return 0;
 }
+//최종 완료
